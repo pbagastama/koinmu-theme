@@ -19,7 +19,7 @@
     <meta name="resource-type" content="document" />
     <meta name="language" content="en" />
 
-    <title>KOINMU</title>
+    <title>Koinmu</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Styles -->
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-pink shadow-sm">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-pink shadow-sm py-0">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-koinmu.svg"
