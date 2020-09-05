@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-pink shadow-sm py-0">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-pink py-0">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-koinmu.svg"

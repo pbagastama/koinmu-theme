@@ -6,6 +6,7 @@ Version: 1.0
 Author: pbagastama
 Author URI: koinmu.co.id
 */
+
 @font-face {
   font-family: "sf-regular";
   src: url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot"), url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg") format("svg");
@@ -32,9 +33,7 @@ Author URI: koinmu.co.id
   src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff") format("woff"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.svg#Gilroy ExtraBold") format("svg");
 }
 
-html,
-body,
-div {
+html, body, div {
   font-family: "sf-regular", sans-serif;
   scroll-behavior: smooth;
 }
@@ -44,19 +43,19 @@ body {
   color: #fff;
 }
 
-button:focus,
-a:focus {
+button:focus, a:focus {
   outline: 0 !important;
 }
 
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-appearance: none !important;
   margin: 0;
 }
 
 /* Firefox */
+
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -151,7 +150,7 @@ input[type="number"] {
 }
 
 .bg-pink {
-  background: #f573bc !important;
+  background: #F681C3 !important;
 }
 
 .btn {
@@ -209,9 +208,15 @@ input[type="number"] {
 .btn.btn-blue {
   color: #fff !important;
   background-color: #3aa6d2;
-  padding: 0.4rem 1.75rem !important;
+  padding: 1rem 3rem !important;
   letter-spacing: 1px;
   font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .btn.btn-blue {
+    padding: .75rem 2rem !important;
+  }
 }
 
 .btn.btn-white {
@@ -396,18 +401,18 @@ section.header-banner .tagline {
 section.header-banner .tagline .box-text-top {
   width: fit-content;
   background: #d75894;
-  padding: 0.5rem 1rem;
+  padding: .85rem 1.5rem;
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
   font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   line-height: 1.25rem;
   text-align: center;
   letter-spacing: 1px;
 }
 
 section.header-banner .tagline .box-text-center .tag-one {
-  font-size: 4.5rem;
+  font-size: 5rem;
   letter-spacing: 3px;
   margin-bottom: -0.75rem;
 }
@@ -434,7 +439,7 @@ section.header-banner .tagline .box-text-center .tag-one {
 }
 
 section.header-banner .tagline .box-text-center .tag-two {
-  font-size: 4rem;
+  font-size: 4.5rem;
   letter-spacing: 3px;
   margin-bottom: -0.5rem;
   opacity: 0.75;
@@ -462,11 +467,11 @@ section.header-banner .tagline .box-text-center .tag-two {
 }
 
 section.header-banner .tagline .box-text-center .tag-three {
-  font-size: 3.6rem;
+  font-size: 4rem;
   letter-spacing: 3px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: #f573bc;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 @media (max-width: 1024px) {
@@ -607,6 +612,13 @@ section.section-features .title {
 
 section.section-features .card-features {
   margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  section.section-features .card-features {
+    padding: 0 1rem;
+  }
 }
 
 section.section-features .item-box {
@@ -617,6 +629,12 @@ section.section-features .item-box {
   border-radius: 1rem;
 }
 
+@media (max-width: 768px) {
+  section.section-features .item-box {
+    padding: 1.5rem 1.85rem 0;
+  }
+}
+
 @media (max-width: 576px) {
   section.section-features .item-box {
     padding: 1rem 2rem;
@@ -624,9 +642,9 @@ section.section-features .item-box {
 }
 
 section.section-features .item-box:hover {
-  border: 2px solid #f573bc;
+  border: 1px solid #f573bc;
   cursor: pointer;
-  box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 6px 30px 20px rgba(0, 0, 0, 0.06);
   transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
@@ -657,26 +675,30 @@ section.section-features .item-box .icon-features {
 }
 
 section.section-features .item-box p.text-features {
-  margin: 1rem 2.75rem 1.5rem;
-  letter-spacing: 0.5px;
-  line-height: 1.5rem;
-  min-height: 145px;
+  margin: 1rem 1rem 1.5rem;
+  letter-spacing: 0.03em;
+  line-height: 1.85rem;
+  min-height: 170px;
+  font-size: 1.15rem;
 }
 
 @media (max-width: 1024px) {
   section.section-features .item-box p.text-features {
-    letter-spacing: 0.5px;
-    line-height: 1.5rem;
-    margin: 1rem 0.75rem 1.5rem;
+    letter-spacing: 0.03px;
+    line-height: 1.75rem;
+    margin: 1.5rem 0.25rem;
+    font-size: 1rem;
+    min-height: 150px;
   }
 }
 
 @media (max-width: 768px) {
   section.section-features .item-box p.text-features {
-    letter-spacing: 0;
+    letter-spacing: 0.0em;
     line-height: 1.25rem;
-    margin: 1rem 0 1.5rem;
-    font-size: 0.85rem;
+    margin: 1.5rem 0 1.5rem;
+    font-size: 0.75rem;
+    min-height: 110px;
   }
 }
 
@@ -1115,4 +1137,5 @@ footer.footer-koinmu {
     padding: 1.5rem 0;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
