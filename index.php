@@ -21,7 +21,7 @@
                     </h1>
                 </div>
                 <div class="box-button">
-                    <a class="btn btn-blue" href="#">Know More</a>
+                    <a class="btn btn-blue" href="#features">Know More</a>
                 </div>
             </div>
 
@@ -151,11 +151,6 @@
             <div class="col-md-6 box-right">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/build.png" alt="ic-build"
                     class="img-fluid icon-build mb-2">
-                <div class="text-call">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-call.png" alt="ic-call"
-                        class="img-fluid icon-call">
-                    <p class="gilroy-extrabold">+62 812-1388-800</p>
-                </div>
                 <div class="text-location">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-location.png"
                         alt="ic-location" class="img-fluid icon-location">
@@ -171,16 +166,47 @@
                     Dapatkan berbagai keuntungan dan fitur yang memudahkan anda hanya di aplikasi <span class="sf-bold"
                         style="color: #FFCB3C">KOINMU</span>
                 </div>
-                <div class="download-apps">
-                    <a href="#">
-                        <p>Download Sekarang</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/google-play.png"
-                            alt="ic-google" class="img-fluid icon-google">
+                <div class="download-apps mb-3">
+                    <a class="btn btn-black" href="https://wa.me/62812138880">
+                        <span class="icon-btn mr-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-wa.png" alt="ic-wa"
+                                class="img-fluid icon-wa">
+                        </span>
+                        <span class="text-btn">
+                            Customer Service KOINMU<br />
+                            <b class="gilroy-extrabold">+62 812-1388-800</b>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="text-tnc">
+                    <a type="button" class="sf-bold" data-toggle="modal" data-target="#modaltnc">
+                        Syarat & ketentuan bergabung dengan koinmu
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<div class="modal fade sf-regular" id="modaltnc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title gilroy-extrabold" id="exampleModalLongTitle">Syarat dan Ketentuan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Syarat dan ketentuan dalam halaman ini mengikat para Pengunjung dan Pengguna Situs koinmu.com
+                untuk tunduk dan patuh atas apa yang telah ditetapkan oleh pihak pengelola situs. Dengan mengunjungi
+                atau menggunakan situs koinmu.com, maka baik pengunjung maupun pengguna dinyatakan telah
+                memahami dan menyepakati semua isi dalam syarat dan ketentuan di bawah ini.
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>

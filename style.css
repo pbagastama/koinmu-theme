@@ -100,6 +100,36 @@ input[type="number"] {
   }
 }
 
+@keyframes shadowOne {
+  0% {
+    text-shadow: none;
+    color: #FFF
+  }
+  50% {
+    color: #f573bc;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  100% {
+    color: #FFF;
+    text-shadow: none;
+  }
+}
+
+@keyframes shadowTwo {
+  0% {
+    color: #f573bc;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  50% {
+    color: #FFF;
+    text-shadow: none;
+  }
+  100% {
+    color: #f573bc;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+}
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -187,24 +217,6 @@ input[type="number"] {
   padding: 0.4rem 1.75rem !important;
 }
 
-.btn.btn-orange:hover {
-  color: #6d4c41 !important;
-  background: #fff;
-  border-color: #6d4c41;
-}
-
-.btn.btn-green {
-  color: #fff !important;
-  background-color: #8bc34a;
-  padding: 0.4rem 1.75rem !important;
-}
-
-.btn.btn-green:hover {
-  color: #6d4c41 !important;
-  background: #fff;
-  border-color: #6d4c41;
-}
-
 .btn.btn-blue {
   color: #fff !important;
   background-color: #3aa6d2;
@@ -216,6 +228,24 @@ input[type="number"] {
 @media (max-width: 576px) {
   .btn.btn-blue {
     padding: .75rem 2rem !important;
+  }
+}
+
+.btn.btn-black {
+  color: #fff !important;
+  background-color: #1E1E1E;
+  padding: 1.25rem 2rem !important;
+  letter-spacing: 1px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+@media (max-width: 576px) {
+  .btn.btn-black {
+    padding: 1.25rem !important;
   }
 }
 
@@ -411,10 +441,20 @@ section.header-banner .tagline .box-text-top {
   letter-spacing: 1px;
 }
 
+@media (max-width: 576px) {
+  section.header-banner .tagline .box-text-top {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
 section.header-banner .tagline .box-text-center .tag-one {
   font-size: 5rem;
   letter-spacing: 3px;
   margin-bottom: -0.75rem;
+  animation: shadowOne 3s ease-in-out infinite;
+  -webkit-animation: shadowOne 3s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 @media (max-width: 1024px) {
@@ -427,6 +467,12 @@ section.header-banner .tagline .box-text-center .tag-one {
   section.header-banner .tagline .box-text-center .tag-one {
     font-size: 3rem;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  section.header-banner .tagline .box-text-center .tag-one {
+    font-size: 2.85rem;
   }
 }
 
@@ -443,6 +489,9 @@ section.header-banner .tagline .box-text-center .tag-two {
   letter-spacing: 3px;
   margin-bottom: -0.5rem;
   opacity: 0.75;
+  animation: shadowOne 3s ease-in-out infinite;
+  -webkit-animation: shadowOne 3s ease-in-out infinite;
+  animation-delay: 5s;
 }
 
 @media (max-width: 1024px) {
@@ -455,6 +504,12 @@ section.header-banner .tagline .box-text-center .tag-two {
   section.header-banner .tagline .box-text-center .tag-two {
     font-size: 2.65em;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  section.header-banner .tagline .box-text-center .tag-two {
+    font-size: 2.55rem;
   }
 }
 
@@ -472,6 +527,9 @@ section.header-banner .tagline .box-text-center .tag-three {
   margin-bottom: 1.5rem;
   color: #f573bc;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  animation: shadowTwo 3s ease-in-out infinite;
+  -webkit-animation: shadowTwo 3s ease-in-out infinite;
+  animation-delay: 9s;
 }
 
 @media (max-width: 1024px) {
@@ -483,10 +541,18 @@ section.header-banner .tagline .box-text-center .tag-three {
 @media (max-width: 768px) {
   section.header-banner .tagline .box-text-center .tag-three {
     font-size: 2.35rem;
+    margin-bottom: 1rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
+  section.header-banner .tagline .box-text-center .tag-three {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
   section.header-banner .tagline .box-text-center .tag-three {
     font-size: 1.95rem;
   }
@@ -903,51 +969,56 @@ section.section-contact .title {
   }
 }
 
-section.section-contact .box-right .text-call {
-  display: flex;
-  margin: 2rem 0 1.5rem;
-}
-
 @media (max-width: 576px) {
-  section.section-contact .box-right .text-call {
+  section.section-contact .box-right .text-tnc {
     margin: 1.25rem 0 1rem;
   }
 }
 
-section.section-contact .box-right .text-call .icon-call {
+section.section-contact .box-right .text-tnc .icon-call {
   width: auto;
   margin-right: 1rem;
 }
 
 @media (max-width: 320px) {
-  section.section-contact .box-right .text-call .icon-call {
+  section.section-contact .box-right .text-tnc .icon-call {
     margin-right: 0.85rem;
   }
 }
 
-section.section-contact .box-right .text-call p {
-  margin: 0;
+section.section-contact .box-left .text-tnc a {
+  margin: 2rem 0 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 2px;
   font-size: 1.25rem;
+  color: #FFCB3C;
 }
 
 @media (max-width: 576px) {
-  section.section-contact .box-right .text-call p {
+  section.section-contact .box-left .text-tnc a {
     font-size: 1.15rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 375px) {
-  section.section-contact .box-right .text-call p {
+  section.section-contact .box-left .text-tnc a {
     font-size: 1rem;
+  }
+}
+
+section.section-contact .box-right {
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  section.section-contact .box-right {
+    padding-right: 0;
   }
 }
 
 section.section-contact .box-right .text-location {
   display: flex;
+  margin: 1.25rem 10px;
 }
 
 section.section-contact .box-right .text-location .icon-location {
@@ -1049,7 +1120,7 @@ section.section-contact .box-left .content-left {
   line-height: 2.85rem;
   font-weight: bold;
   letter-spacing: 0.05em;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.25rem;
 }
 
 @media (max-width: 768px) {
@@ -1079,6 +1150,33 @@ section.section-contact .box-left .content-left {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;
+  }
+}
+
+section.section-contact .box-left .download-apps span.text-btn {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 576px) {
+  section.section-contact .box-left .download-apps span.text-btn {
+    line-height: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  section.section-contact .box-left .download-apps span.text-btn {
+    line-height: 1.15rem;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  section.section-contact .box-left .download-apps span.text-btn {
+    line-height: 1rem;
+    font-size: .7rem;
   }
 }
 
@@ -1132,10 +1230,75 @@ footer.footer-koinmu {
   padding: 1.5rem;
 }
 
+@media (max-width: 576px) {
+  footer.footer-koinmu .copyright p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 320px) {
   footer.footer-koinmu {
     padding: 1.5rem 0;
   }
+}
+
+.koinmu-body .modal .modal-dialog {
+  max-width: 700px;
+}
+
+@media (max-width: 576px) {
+  .koinmu-body .modal .modal-dialog {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .koinmu-body .modal .modal-dialog {
+    margin: 2rem;
+  }
+  .koinmu-body .modal .modal-content .modal-header {
+    padding: 1.5rem 1rem 1.25rem;
+  }
+  .koinmu-body .modal .modal-content .modal-header .modal-title {
+    font-size: 1rem;
+  }
+  .koinmu-body .modal .modal-content .modal-body {
+    padding: 0 1rem 2rem;
+    font-size: .75rem;
+  }
+}
+
+.koinmu-body .modal .modal-content {
+  position: relative;
+  width: 100%;
+  background: #1e1e1e;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 1rem;
+  outline: 0;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.koinmu-body .modal .modal-content .modal-header {
+  padding: 2rem;
+  border-bottom: 0;
+  text-shadow: 0 2px 0 #333;
+}
+
+.koinmu-body .modal .modal-content .modal-header button.close {
+  font-size: 1.75rem;
+  font-weight: 200;
+  color: #FFF;
+  text-shadow: 0 2px 0 #333;
+  opacity: 1;
+}
+
+.koinmu-body .modal .modal-content .modal-body {
+  padding: 0 2rem 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
