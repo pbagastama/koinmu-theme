@@ -7,7 +7,9 @@
         <div class="row">
             <div class="col-md-6 col-sm-12 tagline">
                 <div class="box-text-top">
-                    Koinmu Spirit Tagline!
+                    <a href="#contact">
+                        JOIN KOINMU NOW!
+                    </a>
                 </div>
                 <div class="box-text-center">
                     <h1 class="gilroy-extrabold tag-one">
